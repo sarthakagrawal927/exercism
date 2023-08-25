@@ -1,2 +1,20 @@
 */**/done
+*/**/.exercism/*
+
+# cpp
 */**/catch.hpp
+*/**/CMakeLists.txt
+
+# dart
+*/**/.dart_tool/*
+*/**/*.lock
+
+# python
+*/**/__pycache__/*
+
+# js
+*/**/node_modules
+*/**/package-lock.json
+*/**/yarn.lock
+*/**/.yarn/*
+*/**/*.cjs
