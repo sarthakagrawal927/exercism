@@ -48,3 +48,11 @@ python3.9 -m pytest -o markers=task {test_file_name}
 ```bash
 dart test
 ```
+
+## Misc
+
+Remove a file from all directory from git history
+
+```bash
+find . -name catch.hpp -print0 | xargs -0 git rm --ignore-unmatch --cached
+```
