@@ -31,6 +31,11 @@ exercism submit
 
 Detailed information on running tests are available in the README.md of each exercise.
 
+### Go
+```bash
+go test
+```
+
 ### Rust
 
 ```bash
