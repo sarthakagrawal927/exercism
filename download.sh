@@ -4,7 +4,7 @@
 set -e
 set -u
 
-tracks=("python" "typescript" "elixir" "dart" "rust" "cpp")
+tracks=("python" "typescript" "elixir" "dart" "rust" "cpp" "zig" "lua" "nim" "kotlin" "scala" "julia" "ruby" "swift")
 
 function download_exercises() {
     local track="$1"
