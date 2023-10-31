@@ -4,7 +4,12 @@
 set -e
 set -u
 
-tracks=("python" "typescript" "elixir" "dart" "rust" "zig" "go")
+if [ -z "$1" ]; then
+    # Default tracks if no language is provided
+    tracks=("python" "typescript" "elixir" "dart" "rust" "zig" "go")
+else
+    tracks=("$1")
+fi
 
 function download_exercises() {
     local track="$1"

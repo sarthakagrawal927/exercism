@@ -3,7 +3,7 @@
 ## Downloading
 
 ```bash
-sh download.sh
+sh download.sh <language>
 ```
 
 ## Listing
