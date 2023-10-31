@@ -29,7 +29,7 @@ root_directory="./"  # Change this to the root directory where tracks are locate
 
 if [ -z "$1" ]; then
     # Default tracks if no language is provided
-    tracks=("python" "typescript" "elixir" "dart" "rust" "cpp" "zig" "lua" "nim" "kotlin" "scala" "julia" "ruby" "swift")
+    tracks=("python" "typescript" "elixir" "dart" "rust" "zig" "go")
 else
     tracks=("$1")
 fi

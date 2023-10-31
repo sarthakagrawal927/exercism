@@ -4,7 +4,7 @@
 set -e
 set -u
 
-tracks=("python" "typescript" "elixir" "dart" "rust" "cpp" "zig" "lua" "nim" "kotlin" "scala" "julia" "ruby" "swift")
+tracks=("python" "typescript" "elixir" "dart" "rust" "zig" "go")
 
 function download_exercises() {
     local track="$1"
@@ -17,12 +17,12 @@ function download_exercises() {
       | grep -v '"exercises":' \
       | while read -r slug; do
             if [ ! -d "./$track/$slug" ]; then
-                echo "Downloading exercise: $slug for track: $track"
+                echo "[DOWNLOADING EXERCISE]: $slug for track: $track"
                 if ! exercism download --track="$track" --exercise="$slug"; then
-                    echo "Error downloading exercise: $slug for track: $track"
+                    echo "[ERROR DOWNLOADING] exercise: $slug for track: $track"
                 fi
             else
-                echo "Exercise: $slug for track: $track is already downloaded"
+                echo "[ALREADY DOWNLOADED] Exercise: $slug for track: $track"
             fi
         done
 }
