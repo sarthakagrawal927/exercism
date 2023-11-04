@@ -6,7 +6,7 @@ set -u
 
 if [ -z "$1" ]; then
     # Default tracks if no language is provided
-    tracks=("python" "typescript" "elixir" "dart" "rust" "zig" "go")
+    tracks=("python" "typescript" "elixir" "dart" "rust" "go")
 else
     tracks=("$1")
 fi
