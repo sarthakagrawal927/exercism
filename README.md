@@ -54,6 +54,12 @@ python3.9 -m pytest -o markers=task {test_file_name}
 dart test
 ```
 
+### Zig
+
+```bash
+zig test {test_file_name}
+```
+
 ## Misc
 
 Remove a file from all directory from git history
