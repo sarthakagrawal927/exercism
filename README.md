@@ -1,5 +1,7 @@
 # Exercism
 
+Its good for intermediate if you want to pick up new language. I feel I will only be back to this if I am unable to make new project in a new language of my choice.
+
 ## Downloading
 
 ```bash
